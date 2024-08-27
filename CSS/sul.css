@@ -1,0 +1,210 @@
+/*----------------------*/
+/*     Google Fonts     */
+/*----------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&display=swap');
+
+/*-----------------------*/
+/*       Variáveis       */
+/*-----------------------*/
+
+:root {
+    --azul-claro: #A7D5F2;
+    --azul-escuro: #007377;
+    --rosa: #F2A9A2;
+    --verde: #B8D973;
+    --texto: #000000;
+    --cinza: #979797;
+    --primeira-font: 'Lato', sans-serif;
+    --segunda-font: 'League Spartan', sans-serif;
+}
+
+/*-----------------------*/
+/*   Seletor Universal   */
+/*-----------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--segunda-font);
+    overflow-x: hidden;
+} 
+
+/*---------------------*/
+/*      Cabeçalho      */
+/*---------------------*/
+
+header {
+    width: 100%; /*Largura*/
+    display: flex; /*Deixa os elementos na mesma linha*/
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    position: fixed;
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+
+.container-logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    padding: 8px 10px;
+}
+
+.menu li a:hover {
+    background-color: var(--azul-claro); 
+    border-radius: 15px;
+    transition: 0.10s;
+}
+
+/*-----------------Sul-*/
+/*   Slide Carrossel   */
+/*---------------------*/
+
+section .slider {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 30px
+}
+
+.slider-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input {
+    display: none;
+}
+
+.slide-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img {
+    width: 100%;
+}
+
+.nav-manual, .nav-auto {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn , .nav-auto div {
+    border: 1px solid var(--azul-escuro);
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: var(--azul-escuro);
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3 {
+    background-color: var(--azul-escuro);
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro {
+    margin-left: -50%;
+}
+
+/*-----------------Sul-*/
+/*  Pontos Turísticos  */
+/*---------------------*/
+
+.ponto-turistico h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: var(--segunda-font);
+}
+
+.ponto-turistico p {
+    font-size: 20px;
+    text-align: center;
+    font-family: var(--segunda-font);
+    color: var(--azul-escuro);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 90px;
+}
+
+.grid-item:nth-child(1) {
+    grid-row: 1/3;
+}
+
+.grid-item {
+    display: grid;
+}
+
+.grid-item img {
+    grid-column: 1;
+    grid-row: 1/3;
+    height: 200px;
+    width: 700px;
+}
+
+.grid-item:nth-child(1) img{
+    height: 500px;
+    width: 400px;
+}
+.grid-item:nth-child(2) img {
+    height: 240px;
+    width: 400px;
+}
+.grid-item:nth-child(3) img {
+    height: 240px;
+    width: 400px;
+    align-self: end;
+}
+
+.explicacao p {
+    text-align: center;
+    font-size: 17px;
+}
+

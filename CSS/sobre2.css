@@ -1,0 +1,73 @@
+/*----------------------*/
+/*     Google Fonts     */
+/*----------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&display=swap');
+
+/*-----------------------*/
+/*       Variáveis       */
+/*-----------------------*/
+
+:root {
+    --azul-claro: #A7D5F2;
+    --azul-escuro: #007377;
+    --rosa: #F2A9A2;
+    --verde: #B8D973;
+    --texto: #000000;
+    --cinza: #979797;
+    --primeira-font: 'Lato', sans-serif;
+    --segunda-font: 'League Spartan', sans-serif;
+}
+
+/*-----------------------*/
+/*   Seletor Universal   */
+/*-----------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--segunda-font)
+} 
+
+/*---------------------*/
+/*      Cabeçalho      */
+/*---------------------*/
+
+header {
+    width: 100%; /*Largura*/
+    display: flex; /*Deixa os elementos na mesma linha*/
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    position: fixed;
+    background-color: #fff;
+}
+
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+
+.container-logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    padding: 8px 10px
+}
+
+.menu li a:hover {
+    background-color: var(--azul-claro); 
+    border-radius: 15px;
+    transition: 0.10s;
+}
