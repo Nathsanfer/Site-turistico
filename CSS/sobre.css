@@ -71,3 +71,29 @@ header {
     border-radius: 15px;
     transition: 0.10s;
 }
+
+/*---------Sobre-*/
+/*  Informações  */
+/*---------------*/
+
+section {
+    margin: auto 30px;
+}
+
+.texto h1 {
+    font-size: 40px;
+    font-family: var(--segunda-font);
+}
+
+.texto p {
+    font-size: 16px;
+}
+
+hr {
+    border-color: var(--azul-escuro);
+}
+
+.texto img {
+    width: 300px;
+    border-radius: 50px;
+}
