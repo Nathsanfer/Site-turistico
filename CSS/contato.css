@@ -31,7 +31,9 @@
 } 
 
 body {
-    background-image: linear-gradient(#00000080, #00000080), url(../img/contato/fundo03.jfif);
+    background-image: url(../img/contato/fundo03.jfif);
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -94,8 +96,8 @@ header {
     display: flex;
     align-items: center;
     position: absolute; 
-	left: 32%;
-	top: 140px; 
+	left: 37%;
+	top: 250px; 
 }
 
 h3 {
