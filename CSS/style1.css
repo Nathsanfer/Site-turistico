@@ -124,3 +124,70 @@ section {
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
+
+/*-------------------HOME-*/
+/*       Categorias       */
+/*------------------------*/
+
+.index-category {
+    width: 100%;
+    padding: 0px 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.index-category h1 {
+    font-family: var(--segunda-font);
+    color: var(--azul-escuro);
+    text-align: center;
+    padding-bottom: 40px;
+    flex-basis: 100%;
+    font-size: 35px;
+}
+
+.index-category-box {
+    width: 300px;
+    height: 190px;
+    background-color: #111;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.index-category-box:hover {
+    box-shadow: 0 0 20px var(--azul-escuro), 0 0 40px var(--azul-escuro), 0 0 60px var(--azul-escuro);
+}
+
+.index-category-box:nth-child(2) {
+    background-image: linear-gradient(#00000080, #00000080), url(../img/home/norte.jpg);
+}
+
+.index-category-box:nth-child(3) {
+    background-image: linear-gradient(#00000080, #00000080), url(../img/home/centro-oeste.jpg);
+}
+
+.index-category-box:nth-child(4) {
+    background-image: linear-gradient(#00000080, #00000080), url(../img/home/nordeste.jpg);
+}
+
+.index-category-box:nth-child(5) {
+    background-image: linear-gradient(#00000080, #00000080), url(../img/home/sul.jpg);
+}
+
+.index-category-box:nth-child(6) {
+    background-image: linear-gradient(#00000080, #00000080), url(../img/home/sudeste.jpg);
+}
+
+.index-category-box h3 {
+    font-family: var(--primeira-font);
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
