@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="CSS/contato3.css" />
+</head>
+
+<body>
+    <header>
+        <!--Cabeçalho-->
+        <div class="container-logo">
+            <a href="index.html">
+                <h1>ViajArt</h1>
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <!--Formulário-->
+        <form action="#">
+            <h3>Realize seu login!!</h3>
+            <div class="informacao-usuario">
+                <div class="input-box">
+                    <label class="detalhes">Nome: </label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required maxlength="100" />
+                </div>
+                <div class="input-box">
+                    <label class="detalhes">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@seuemail.com" required />
+                </div>
+                <div class="input-box">
+                    <label class="detalhes">Senha: </label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" minlength="8"
+                        maxlength="12" />
+                </div>
+                <div class="input-box">
+                    <label class="detalhes">Data de Nascimento: </label>
+                    <input type="date" id="data-de-nascimento" name="data-de-nascimento" required />
+                </div>
+            </div>
+
+            <div class="descricao-detalhes">
+                <span class="descricao-title">Descrição: </span>
+                <div class="campo-descricao">
+                    <textarea id="descricao" name="descricao" rows="5" placeholder="Conte-nos sobre você."
+                        required></textarea>
+                </div>
+            </div>
+
+            <div class="genero-detalhes">
+                <span class="genero-titulo">Gênero: </span>
+                <div class="categoria">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="masculino" name="genero" value="masculino" required />
+
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="feminino" name="genero" value="feminino" required />
+
+                    <label for="feminino">Outro</label>
+                    <input type="radio" id="outro" name="genero" value="outro" required checked />
+                </div>
+            </div>
+
+            <div class="botao">
+                <input type="submit" value="Registrar-se" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
